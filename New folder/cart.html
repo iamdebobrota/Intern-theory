@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/cart.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-data">
+            <div class="header-left">
+                <div class="icon main-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-container"><a href="login.html">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-box">
+            <div class="sidebar-top">
+                <div class="icon second-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="sidebar-grid">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <a href="internship.html">Internships</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <a href="internship.html">Jobs</a>
+                </div>
+                <div class="box" id="course">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <p>Courses</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box courseContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="onlineCourses.html">Online Courses</a>
+                </div>
+                <div class="box courseContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="onlineCourses.html">Classroom Training</a>
+                </div>
+                <div class="box contact-us">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <a href="contactpage.html">Contact Us</a>
+                </div>
+                <div class="box " id="register">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <p>Register</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box registerContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+                </div>
+                <div class="box registerContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+                </div>
+                <div class="box" id="login">
+                    <div class="icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                    <p>Login</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box loginContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+
+                </div>
+                <div class="box loginContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cartContainer">
+        <div class="cartBox">
+            <div class="cartLeft"></div>
+            <div class="cartRight"></div>
+        </div>
+    </div>
+</body>
+<script src="Script/common.js"></script>
+<script src="Script/cart.js"></script>
+
+</html>

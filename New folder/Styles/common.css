@@ -1,0 +1,402 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+/* Header Style */
+
+.header-container {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-data {
+  width: 96%;
+  margin: 7px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-data > .header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left > .icon,
+.header-right > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
+.header-left > .icon:hover,
+.header-right > .icon:hover {
+  background-color: #9595b947;
+  border-radius: 50%;
+}
+
+.header-left > .logo {
+  width: 84px;
+  height: 47px;
+  cursor: pointer;
+}
+.header-left > .logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-data > .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.button-container > a {
+  text-decoration: none;
+  background-color: #df1e2e;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.5s;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.button-container > a:hover {
+  background-color: #5a3939;
+}
+/* End Header Style */
+
+/* Footer Style */
+.footer-container {
+  width: 100%;
+  background-color: #446478;
+}
+
+.footer-box {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.footer-box > .footer-navigation {
+  display: grid;
+  grid-template-columns: 40px auto auto auto;
+  grid-template-rows: repeat(1, auto);
+  gap: 20px;
+}
+.footer-navigation > .social-handle {
+  /* width: 10%; */
+  align-self: center;
+}
+.footer-navigation > .social-handle > .social-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.footer-navigation > .social-handle > .social-icon > i {
+  color: #fff;
+}
+
+.footer-navigation > .box {
+  padding: 20px 0;
+  width: 100%;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-navigation > .box > ul {
+  width: 70%;
+}
+
+.footer-navigation > .box > ul > li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.footer-navigation > .box > ul > li.heading {
+  color: #fff;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ffffff61;
+}
+
+.footer-navigation > .box > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.footer-bottom > .top {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 12px;
+}
+
+.footer-bottom > .top > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom > .top > ul > li {
+  list-style: none;
+}
+.footer-bottom > .top > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer-bottom > .bottom > p {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+/* End Footer Style */
+
+/* Sidebar */
+.sidebar-container {
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  bottom: 0;
+  left: -214px;
+  width: 0%;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.active {
+  display: flex;
+  left: 0px;
+  width: 23%;
+  transition: all 0.2s ease;
+}
+.sidebar-box {
+  width: 100%;
+  overflow-y: scroll;
+}
+.sidebar-box > .sidebar-top {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+}
+.sidebar-box > .sidebar-top > .icon > i {
+  color: #446478;
+}
+.sidebar-box > .sidebar-top > .icon {
+  margin-right: 20px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+.sidebar-box > .sidebar-top > .logo {
+  width: 84px;
+  height: 43px;
+}
+
+.sidebar-box > .sidebar-top > .icon:hover {
+  background-color: #9595b947;
+  border-radius: 50%;
+}
+.sidebar-box > .sidebar-top > .logo > img {
+  width: 100%;
+}
+.sidebar-box > .sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+.sidebar-box > .sidebar-grid > .box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px 18px;
+  color: #446478 !important;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sidebar-box > .sidebar-grid > .contact-us {
+  border-bottom: 1px solid #00000033;
+  padding-bottom: 12px;
+}
+
+.sidebar-box > .sidebar-grid > .box:hover {
+  background-color: #9595b947;
+}
+.sidebar-box > .sidebar-grid > .box > .icon > i {
+  color: #446478;
+}
+.sidebar-box > .sidebar-grid > .box > .icon {
+  margin-right: 20px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-box > .sidebar-grid > .box > a {
+  color: #446478;
+  text-decoration: none;
+}
+.sidebar-box > .sidebar-grid > .courseContainer1,
+.sidebar-box > .sidebar-grid > .courseContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeCourse {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .registerContainer1,
+.sidebar-box > .sidebar-grid > .registerContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeRegister {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .loginContainer1,
+.sidebar-box > .sidebar-grid > .loginContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeLogin {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > #course > .open,
+.sidebar-box > .sidebar-grid > #course > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #course > .activeBtn,
+.sidebar-box > .sidebar-grid > #course > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+.sidebar-box > .sidebar-grid > #register > .open,
+.sidebar-box > .sidebar-grid > #register > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #register > .activeBtn,
+.sidebar-box > .sidebar-grid > #register > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+.sidebar-box > .sidebar-grid > #login {
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px 18px;
+  color: #446478 !important;
+  font-weight: bold;
+  font-size: 15px;
+}
+.sidebar-box > .sidebar-grid > #login > .open,
+.sidebar-box > .sidebar-grid > #login > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #login > .activeBtn,
+.sidebar-box > .sidebar-grid > #login > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+/* End Sidebar Style */
+@media only screen and (min-width: 421px) and (max-width: 1000px) {
+  /* Header Container */
+  .header-data {
+    margin: 7px 0;
+  }
+  .header-left > .logo {
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .header-left > .icon,
+  .header-right > .icon {
+    font-size: 15px;
+    margin-right: 3px;
+  }
+  .button-container > a {
+    padding: 10px 16px;
+    font-size: 9px;
+  }
+  /* Sidebar Container */
+  .active {
+    width: 55%;
+  }
+  /* Footer Container */
+  .footer-box > .footer-navigation {
+    display: none;
+  }
+  .footer-bottom > .top {
+    display: none;
+  }
+}
+
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  /* Header Container */
+  .header-right > .button-container {
+    display: none;
+  }
+  /* Sidebar Container */
+  .active {
+    width: 100%;
+  }
+  /* Footer Container */
+  .footer-box > .footer-navigation {
+    display: none;
+  }
+  .footer-bottom > .top {
+    display: none;
+  }
+}

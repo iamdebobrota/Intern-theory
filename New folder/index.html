@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships and Online Courses for College Students | Intern Theory</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/homepage.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-data">
+            <div class="header-left">
+                <div class="icon main-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-container"><a href="login.html">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-box">
+            <div class="sidebar-top">
+                <div class="icon second-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="sidebar-grid">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <a href="internship.html">Internships</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <a href="internship.html">Jobs</a>
+                </div>
+                <div class="box" id="course">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <p>Courses</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box courseContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="onlineCourses.html">Online Courses</a>
+                </div>
+                <div class="box courseContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="onlineCourses.html">Classroom Training</a>
+                </div>
+                <div class="box contact-us">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <a href="contactpage.html">Contact Us</a>
+                </div>
+                <div class="box " id="register">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <p>Register</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box registerContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+                </div>
+                <div class="box registerContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+                </div>
+                <div class="box" id="login">
+                    <div class="icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                    <p>Login</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box loginContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+
+                </div>
+                <div class="box loginContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SearchBar -->
+    <div class="searchBar-container">
+        <div class="searchBar-Box">
+            <div class="bgImg">
+                <img src="images/BgImgjpg.jpg" alt="center logo">
+            </div>
+            <div class="innerBox">
+                <h5>Let’s Get You <span>Ready</span></h5>
+                <p>The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An Internship. Get Placed</p>
+                <div class="formBox" id="form">
+                    <form id="formData">
+                        <input type="text" list="city" id="cities" placeholder="Cities...">
+                        <datalist id="city"></datalist>
+                        <input type="text" list="types" id="type" placeholder="Type...">
+                        <datalist id="types"></datalist>
+                        <input type="text" list="pref" id="preference" placeholder="Preference...">
+                        <datalist id="pref"></datalist>
+                        <p>OR</p>
+                        <div class="inputBox">
+                            <input type="text" id="search" placeholder="Search...">
+                            <input type="submit" id="submit" value="SEARCH">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Company Addvertisement -->
+    <div class="addContainer">
+        <div class="companyBox">
+            <div class="companyBox-left">
+                <h3><span> PLETHORA OF OPPORTUNITIES</span> FOR YOU</h3>
+                <p>We are on a mission to connect employers to young talent all over India. With our strong corporate
+                    network, it will no longer be a challenge to find the right internship for you</p>
+            </div>
+            <div class="companyBox-right">
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-1.png" alt="Disney">
+                </div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-2.png" alt="MW">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-3.png" alt="CV">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-4.png" alt="MAX">
+                </div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-6.png" alt="WeChat">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-7.png"
+                        alt="Microsoft"></div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-8.png" alt="LIC">
+                </div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-9.png" alt="Ferari">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-10.png"
+                        alt="Fever10"></div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-11.png"
+                        alt="Book My Show"></div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-12.png"
+                        alt="Hanleys"></div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-13.png" alt="OYO">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-14.png" alt="ITC">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-15.png" alt="Direct">
+                </div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-16.png"
+                        alt="Relience"></div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-17.png" alt="JIO">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-18.png" alt="Kotak">
+                </div>
+                <div class="box"><img src="https://assets.interntheory.com/creative/home-logo/logo-19.png" alt="Swiggy">
+                </div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-20.png" alt="Star">
+                </div>
+                <div class="box"><img src="	https://assets.interntheory.com/creative/home-logo/logo-21.png" alt="VI18">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="workExperience-container">
+        <div class="experienceBox">
+            <div class="experience-head">
+                <h3>LET’S GET SOME <span>WORK EXPERIENCE</span></h3>
+            </div>
+            <div class="grid-exBox">
+                <img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg" alt="Marketing">
+            </div>
+            <div class="grid-exBox">
+                <img src="https://assets.interntheory.com/creative/home-internships/BD.jpg" alt="Development">
+            </div>
+            <div class="grid-exBox">
+                <img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"
+                    alt="Content Writing">
+            </div>
+            <div class="grid-exBox">
+                <img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg" alt="Graphic">
+            </div>
+            <div class="grid-exBox">
+                <img src="	https://assets.interntheory.com/creative/home-internships/Finance.jpg" alt="Finance">
+            </div>
+            <div class="grid-exBox">
+                <img src="	https://assets.interntheory.com/creative/home-internships/HR.jpg" alt="HR">
+            </div>
+            <div class="grid-exBox">
+                <img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg" alt="Engineering">
+            </div>
+            <div class="grid-exBox">
+                <img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"
+                    alt="All-Internships">
+            </div>
+        </div>
+    </div>
+
+    <!-- Upskilling Section -->
+    <div class="upSkillContainer">
+        <div class="upSkillBox">
+            <div class="skillHead">
+                <h3>HOW ABOUT <span>UPSKILLING ?</span></h3>
+            </div>
+            <div class="skillBox"><a href="upskilling1.html"><img
+                        src="	https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg" alt="stock"></a>
+            </div>
+            <div class="skillBox"><a href="upskilling2.html"><img
+                        src="	https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg"
+                        alt="Digital"></a></div>
+            <div class="skillBox"><a href="upskilling3.html"><img
+                        src="https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg" alt="Web"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Stat Box -->
+    <div class="statContainer">
+        <div class="statBox">
+            <div class="left">
+                <div class="imgBox">
+                    <img src="https://assets.interntheory.com/creative/chart.png" alt="Chart">
+                </div>
+            </div>
+            <div class="right">
+                <h3>
+                    WE ARE CONSTANTLY <span>GROWING</span> </h3>
+                <p>
+                    We are on a mission to help every student in India. Upgrading your CV and getting you a
+                    meaningful job remains our sole motive and we are not stopping anytime soon.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Slider -->
+    <div class="slider-container">
+        <div class="slider-box">
+            <div class="previous">
+                <div class="icon prevousBtn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+            <div class="items">
+                <div>
+                    <div class="left">
+                        <div class="img-box">
+                            <img src="https://assets.interntheory.com/img/testimonial-image/in4.jpg" alt="profile">
+                        </div>
+                        <p class="name">Harshil Bhadra</p>
+                        <p class="description">Intern at Porsche</p>
+                    </div>
+                    <div class="right">
+                        <p><em> "If you are more than satisfied with a particular product/firm who gives you more than
+                                you
+                                expect then there’s no need to find a substitute. Its similar with Intern Theory, the
+                                best
+                                team who makes continuous efforts and always ready to help! Thanks for giving me the
+                                best
+                                start."</em></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <div class="img-box">
+                            <img src="https://assets.interntheory.com/img/testimonial-image/in3.jpg" alt="profile">
+                        </div>
+                        <p class="name">Amani Nagda</p>
+                        <p class="description">Intern at Porsche</p>
+                    </div>
+                    <div class="right">
+                        <p><em> "I was on a look out for an internship to spend my summer productively and I stumbled
+                                upon
+                                Inter Theory. Their team was very kind and kept me updated. I applied for Viacom18 and
+                                got
+                                through. I thank Intern Theory team for giving me this opportunity."</em></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <div class="img-box">
+                            <img src="	https://assets.interntheory.com/img/testimonial-image/in1.jpg" alt="profile">
+                        </div>
+                        <p class="name">Sshikha Bodwaani</p>
+                        <p class="description">Intern at Porsche</p>
+                    </div>
+                    <div class="right">
+                        <p><em> "We have been using InternTheory for over a year now and are very happy with the quality
+                                of applications that we receive. Their team has been very helpful in screening
+                                applications for the various internship requirements we had. It has been a delight
+                                working with them"</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <div class="icon nextBtn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer-box">
+            <div class="footer-navigation">
+                <div class="social-handle">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="box places">
+                    <ul>
+                        <li class="heading">BY PLACE</li>
+                        <li>
+                            <a href="#">Internship in Mumbai</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Delhi</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Bangalore</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Pune</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Hyderabad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box profiles">
+                    <ul>
+                        <li class="heading">BY PROFILE</li>
+                        <li>
+                            <a href="#">Marketing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Business Development Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Content Writing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Graphic Designing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">HR Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Engineering Internships</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box types">
+                    <ul>
+                        <li class="heading">BY TYPE</li>
+                        <li>
+                            <a href="#">Full Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Part Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Work From Home Internships</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="top">
+                    <ul>
+                        <li><a href="#">REFUND & CANCELLATION POLICY</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Script/common.js"></script>
+<script src="Script/homepage.js"></script>
+<script src="Script/data.js"></script>
+
+</html>

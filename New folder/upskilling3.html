@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upskilling3</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/upskilling3.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-data">
+            <div class="header-left">
+                <div class="icon main-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-container"><a href="login.html">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-box">
+            <div class="sidebar-top">
+                <div class="icon second-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="sidebar-grid">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <a href="internship.html">Internships</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <a href="internship.html">Jobs</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-rectangle-list"></i>
+                    </div>
+                    <p>Post Internships</p>
+                </div>
+                <div class="box" id="course">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <p>Courses</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box courseContainer1">
+                    <div class="icon">
+                    </div>
+                    <p>Online Courses</p>
+                </div>
+                <div class="box courseContainer2">
+                    <div class="icon">
+                    </div>
+                    <p>Classroom Training</p>
+                </div>
+                <div class="box contact-us">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <a href="contactpage.html">Contact Us</a>
+                </div>
+                <div class="box " id="register">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <p>Register</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box registerContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+                </div>
+                <div class="box registerContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+                </div>
+                <div class="box" id="login">
+                    <div class="icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                    <p>Login</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box loginContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+
+                </div>
+                <div class="box loginContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <img src="http://www.webqsolutions.com/wp-content/uploads/2016/08/Service-Website-Design-Development.jpg" />
+    </div>
+    <div id="section">
+        <div id="part1">
+            <div>
+                <h1>Web Development Course</h1>
+                <p>Learn the art of web design and web development. Join this online web development course and
+                    learn front end technologies like html, css, bootstrap. Also learn back end technologies like
+                    php and database management using mysql.</p>
+            </div>
+            <!-- <div id="course">
+                <div id="course1">
+                    <div></div>
+                    <div><p>Course Instructor</p></div>
+                </div>
+                <div id="course2">
+                    <div>
+                        <img src="https://assets.interntheory.com/creative/instructor-image/parthkadakia.jpeg"/>
+                    </div>
+                    <div>
+                        <h4>Parth Kadakia</h4>
+                        <p id="p1">Research Analyst, Sub Broker, Executive Director - KMAC</p>
+                        <p id="p2">Parth Kadakia is a professional trader with years of trading and teaching experience.
+                             Being a Research Analyst and an active trader since years, he has amassed tremendous 
+                             knowledge and experience in the Indian Stock Markets. He is a visiting faculty at 
+                             various institutions and exchanges across the country. He has made significant 
+                             contributions in the industry by helping thousands of individuals by educating them 
+                             and making them professionals of the Indian Stock Markets.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div id="box">
+                <div class="box8">
+                    <div></div>
+                    <div>
+                        <p>Key Features</p>
+                    </div>
+                </div>
+                <div id="box2">
+                    <div class="div">
+                        <div><img src="https://assets.interntheory.com/creative/features_icon/certified.png" /></div>
+                        <div>
+                            <p>Certified</p>
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div><img
+                                src="https://assets.interntheory.com/creative/features_icon/study-at-your-own-time.png" />
+                        </div>
+                        <div>
+                            <p>Study At Your Own Time</p>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div><img
+                                src="https://assets.interntheory.com/creative/features_icon/learn-from-professional.png" />
+                        </div>
+                        <div>
+                            <p>Learn from Industry Professionals
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div><img src="https://assets.interntheory.com/creative/features_icon/study-more.png" /></div>
+                        <div>
+                            <p>More Practice, Less Theory</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="line">
+                <div class="box1">
+                    <div></div>
+                    <div>
+                        <p>What will a student get after the course?</p>
+                    </div>
+                </div>
+                <div id="box3">
+                    <div class="div">
+                        <div><img
+                                src="https://assets.interntheory.com/creative/features_icon/learn-from-professional.png" />
+                        </div>
+                        <div>
+                            <p>Learn from Industry Professionals
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div><img
+                                src="https://assets.interntheory.com/creative/features_icon/learn-from-professional.png" />
+                        </div>
+                        <div>
+                            <p>Learn from Industry Professionals
+                        </div>
+                    </div>
+                </div>
+                <hr class="line">
+                <div class="box1">
+                    <div></div>
+                    <div>
+                        <p>Syllabus</p>
+                    </div>
+                </div>
+                <div id="box4">
+                    <div>
+                        <p>Web Development Course</p>
+                    </div>
+                    <div><i class="fa-solid fa-minus"></i></div>
+                </div>
+                <hr class="line">
+                <div class="box5">
+                    <div id="one">
+                        <p>01</p>
+                    </div>
+                    <div>
+                        <p>Introduction</p>
+                        <p>1Lectures, 1Quizzes </p>
+                    </div>
+                    <div><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <hr class="line1">
+                <div class="box5">
+                    <div id="one">
+                        <p>02</p>
+                    </div>
+                    <div>
+                        <p>HTML</p>
+                        <p>11 Lectures,10 Quizzes, 1 Assignments</p>
+                    </div>
+                    <div><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <hr class="line2">
+                <div class="box5">
+                    <div id="one">
+                        <p>03</p>
+                    </div>
+                    <div>
+                        <p>HTML5</p>
+                        <p>1 Lectures</p>
+                    </div>
+                    <div><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <hr class="line1">
+                <div class="box5">
+                    <div id="one">
+                        <p>04</p>
+                    </div>
+                    <div>
+                        <p>CSS Part 1</p>
+                        <p>6 Lectures,6 Quizzes, 1 Assignments</p>
+                    </div>
+                    <div><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <hr class="line1">
+                <div class="box5">
+
+                    <div id="one">
+                        <p>05</p>
+                    </div>
+                    <div>
+                        <p>CSS Part 2</p>
+                        <p>2 Lectures,2 Quizzes, 2 Assignments</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <hr class="line1">
+                <div id="box6">
+                    <p>SHOW MORE</p>
+                </div>
+                <hr class="line3">
+            </div>
+        </div>
+        <div id="part2">
+            <div id="last1">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+            </div>
+            <div id="last2">
+                <h6>Duration 4-6 Weeks</h6>
+                <hr>
+                <div id="price">
+                    <div>
+                        <h1><i class="fa-solid fa-indian-rupee-sign"></i>5999</h1>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>11999</p>
+                    </div>
+                </div>
+                <div id="cart">
+                    <p>ADD TO CART</p>
+                </div>
+                <p id="or">or</p>
+                <div id="enroll">
+                    <p>ENROLL NOW</p>
+                </div>
+            </div>
+            <div id="last3">
+                <div>
+                    <h6>Confused?</h6>
+                    <p>Leave us a query and we will call you soon.</p>
+                </div>
+                <div>
+                    <img src="Capture.PNG" />
+                </div>
+            </div>
+            <div id="last4">
+                <p class="Similar1">Similar Courses</p>
+                <hr>
+                <p class="Similar">Advanced Excel Course</p>
+                <div class="Similardiv">
+                    <div class="know1">
+                        <p>KNOW MORE</p>
+                    </div>
+                    <div class="know2">
+                        <P><i class="fa-solid fa-indian-rupee-sign"></i>5999</P>
+                    </div>
+                    <div class="know3">
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>2999</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="Similar">Tally + GST Course</p>
+                <div class="Similardiv">
+                    <div class="know1">
+                        <p>KNOW MORE</p>
+                    </div>
+                    <div class="know2">
+                        <P><i class="fa-solid fa-indian-rupee-sign"></i>7999</P>
+                    </div>
+                    <div class="know3">
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>3999</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="Similar">Digital Marketing Course</p>
+                <div class="Similardiv">
+                    <div class="know1">
+                        <p>KNOW MORE</p>
+                    </div>
+                    <div class="know2">
+                        <P><i class="fa-solid fa-indian-rupee-sign"></i>11999</P>
+                    </div>
+                    <div class="know3">
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>5999</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div id="redline">
+        <p>Use Coupon Code FIRSTCOURSE to avail a discount of 20% on your course enrolment. Offer expires in 07hr 24m
+            06s</p>
+    </div>
+    <!-- footer -->
+    <div class="footer-container">
+        <div class="footer-box">
+            <div class="footer-navigation">
+                <div class="social-handle">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="box places">
+                    <ul>
+                        <li class="heading">BY PLACE</li>
+                        <li>
+                            <a href="#">Internship in Mumbai</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Delhi</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Bangalore</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Pune</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Hyderabad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box profiles">
+                    <ul>
+                        <li class="heading">BY PROFILE</li>
+                        <li>
+                            <a href="#">Marketing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Business Development Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Content Writing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Graphic Designing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">HR Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Engineering Internships</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box types">
+                    <ul>
+                        <li class="heading">BY TYPE</li>
+                        <li>
+                            <a href="#">Full Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Part Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Work From Home Internships</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="top">
+                    <ul>
+                        <li><a href="#">REFUND & CANCELLATION POLICY</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Script/common.js"></script>
+<script src="Script/homepage.js"></script>
+
+</body>
+
+</html>

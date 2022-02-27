@@ -1,0 +1,126 @@
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#container {
+    height: auto;
+    width: 40%;
+  margin-left: 40px;
+    /* border: 1px solid red; */
+    margin-top: 62px;
+margin-bottom: 20px;
+ padding: 30px;
+}
+
+#container >h5{
+
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 48px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    
+    letter-spacing: 0em;
+}
+
+#signinbtn {
+    display: grid;
+    padding-top: 12px;
+
+
+}
+.btnsign{
+margin: auto;
+margin-left: 5px;
+text-decoration: none;
+color: white;
+}
+
+
+
+.or,.create{
+    text-align: center;
+    margin: 4px;
+    font-size: 14px;
+    color: #434648;
+}
+
+.email, .mobile,.subject, .massage {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid rgba(171, 160, 160, 0.842);
+    margin-top: 3px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+
+.button-container > a {
+    text-decoration: none;
+    background-color: #df1e2e;
+
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.5s;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+
+  }
+  .button-container{
+      margin: auto;
+      text-align: center;
+      
+  }
+.call {
+    display: flex;
+    width:160px;
+    margin:auto;
+    margin-top: 50px;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 28px;
+    /* color: #df1e68; */
+}
+.icon5 {
+    color: #3b5998;
+}
+.icon1 {
+    color:#0084ff;
+}
+.icon2{
+    color: #ee2c87;
+}
+.icon3 {
+    color: #0073b5;
+}
+.icon4 {
+    color: #25d366;
+}
+
+#map{
+    margin-left: 550px;
+    margin-top: -640px;
+    margin-bottom: 150px;
+}
+
+
+
+
+@media all and (min-width:50px) and (max-width:760px){
+    #container {height: auto;
+    width: 95%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 6px;
+    }
+}
+
+@media all and (min-width:761px) and (max-width:1080px){
+    #container {height: auto;
+    width: 60%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 6px;
+    }
+}

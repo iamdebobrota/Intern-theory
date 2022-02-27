@@ -1,0 +1,216 @@
+body {
+    background-image: conic-gradient(rgb(246, 46, 156), yellow, green);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.header-container {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* border: 2px solid red; */
+}
+.icon >i {
+    color: #434648;
+    
+}
+#container {
+    height: auto;
+    width: 40%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-top: 82px;
+ background-color: white;
+ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 6px;
+margin-bottom: 20px;
+ padding: 30px;
+}
+#students ,#company{
+    height: 40px;
+    width: 50%;
+    color: #9a9c9d;
+    border: none;
+  background-color: white; 
+}
+#students {
+    border-bottom: 2px solid blue;
+}
+#inputbox { 
+  font-size: 16px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+
+}
+#container >h5{
+    color: black;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    
+    letter-spacing: 0em;
+}
+#lbox {
+margin-top: 15px;
+height: 62px;
+border-style: dashed;
+border-color: red;
+border-width: 1px;
+border-radius: 6px;
+background-color: #f7eaec;
+font-size: 17px;
+line-height: 1.4rem;
+padding-left: 7px;
+/* text-align: center; */
+text-justify: newspaper;
+}
+#lbox > span {
+    color: blue;
+    cursor: pointer;
+}
+#signinbtn {
+    display: grid;
+    padding-top: 12px;
+
+
+}
+.facebook,.google, .linkdin {
+    height: 45px;
+    background-color: #4165af;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.linkdin {
+    display: none;
+
+}
+#lnkdn {
+    color: brown;
+}
+
+
+
+
+
+
+.btnsign{
+margin: auto;
+margin-left: 5px;
+text-decoration: none;
+color: white;
+}
+.google {
+    height: 45px;
+    background-color:#18e;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.gle{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    /* margin-left: -165px; */
+    border-radius: 8px;
+    margin: auto;
+    margin-left: 14px;
+    padding: 3px;
+  }
+#lnkdn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    /* margin-left: -165px; */
+    border-radius: 8px;
+    margin: auto;
+    margin-left: 14px;
+    padding: 3px;
+}
+
+
+.or{
+    text-align: center;
+    margin: 4px;
+    font-size: 14px;
+    color: #434648;
+}
+
+.email, .password {
+    height: 45px;
+    border: none;
+    border-bottom: 2px solid red;
+    margin-top: 3px;
+    outline: none;
+}
+
+.wrapper {
+    position: relative;
+    margin-bottom: 8px;
+    margin-top: 8px;
+   
+}
+#remember {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    /* background-color: red; */
+    color: #3C4858;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+#forgot-pass {
+    color: blue;
+    margin-left: 140px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.create {
+    font-size: 15px;
+    text-align: center;
+    color: #3C4858;
+    margin: 8px;
+}
+.create > span {
+    color: blue;
+    cursor: pointer;
+}
+#login {
+    height: 45px;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 5px;
+    margin:10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+}
+
+@media all and (min-width:50px) and (max-width:760px){
+    #container {height: auto;
+    width: 95%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 6px;
+    }
+}
+
+@media all and (min-width:761px) and (max-width:1080px){
+    #container {height: auto;
+    width: 60%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 6px;
+    }
+}

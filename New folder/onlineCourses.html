@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/homepage.css">
+    <style>
+        .mainImage>img {
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        .mainImage {
+            width: 100%;
+        }
+
+        #mainCourseDetail {
+            padding: 5%;
+            margin: 8px !important;
+        }
+
+        #mainCourseDetail>div {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .info {
+            color: rgba(0, 0, 0, 0.54);
+            -webkit-font-smoothing: antialiased;
+            padding-block-end: 25px;
+        }
+
+        .info> :nth-child(1) {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            font: bolder;
+            color: rgba(0, 0, 0, 0.76);
+        }
+
+        .info> :nth-child(2) {
+            font-size: 14px;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.75;
+            letter-spacing: 0.00938em;
+        }
+
+        #courseContainer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 17px;
+        }
+
+        .courseDivGrid {
+            box-shadow: rgba(0, 0, 0, 0.16) 1px 2px 4px;
+            background-color: #fff;
+            height: 370px;
+            border-radius: 5px;
+        }
+
+        .courseDivGrid>div {
+            box-sizing: content-box;
+        }
+
+        .imgProperty {
+            height: 140px;
+            width: 255px;
+            box-sizing: border-box;
+        }
+
+        .firstblock {
+            margin: 5%;
+        }
+
+        .marginBottom {
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            margin-bottom: 0.35em;
+            padding-bottom: 5px;
+            letter-spacing: 0em;
+            margin: 0;
+            display: block;
+            box-sizing: inherit;
+            overflow-wrap: break-word;
+            color: rgba(0, 0, 0, 0.87);
+            text-transform: capitalize;
+            line-height: 1.2rem !important;
+            font-size: 1rem !important;
+            font-weight: medium !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .namenoteClass {
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            margin-bottom: 10px;
+            height: 100px;
+            border-bottom: 0.5px dashed rgb(170, 170, 170);
+        }
+
+        .namenoteClass> :nth-child(2) {
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.54);
+            font-size: 0.875rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.01071em;
+        }
+
+        .costdiv {
+            display: flex;
+            gap: 2px;
+            justify-content: flex-end;
+            margin: 0;
+            box-sizing: border-box
+        }
+
+        .costdiv> :nth-child(1) {
+            font-size: small;
+            color: rgba(0, 0, 0, 0.54);
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+        }
+
+        .costdiv> :nth-child(2) {
+            font-size: large;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        }
+
+        .emiClass {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+            width: 100%;
+            color: rgb(255, 179, 38);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            line-height: 1.5;
+            letter-spacing: 0.01071em;
+        }
+
+        .buttonContainer {
+            text-decoration: none;
+            border: none;
+            background-color: #df1e2e;
+            color: #fff;
+            padding: 10px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.5s;
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+        }
+
+        .buttonContainer:hover {
+            background-color: #5a3939;
+        }
+
+        .cartbtn {
+            padding: 5px;
+            text-align: end;
+        }
+
+        @media only screen and (min-width: 381px) and (max-width: 780px) {
+            #courseContainer {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 370;
+            }
+
+            /* .mainImage{
+        width: 100%;
+        margin-top: 60px;
+        box-sizing: border-box;
+    } */
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 380px) {
+            #courseContainer {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 370;
+            }
+
+            /* .mainImage{
+        width: 100%;
+        margin-top: 60px; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-data">
+            <div class="header-left">
+                <div class="icon main-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-container"><a href="login.html">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-box">
+            <div class="sidebar-top">
+                <div class="icon second-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="sidebar-grid">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <a href="internship.html">Internships</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <a href="internship.html">Jobs</a>
+                </div>
+                <div class="box" id="course">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <p>Courses</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box courseContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="onlineCourses.html">Online Courses</a>
+                </div>
+                <div class="box courseContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="onlineCourses.html">Classroom Training</a>
+                </div>
+                <div class="box contact-us">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <a href="contactpage.html">Contact Us</a>
+                </div>
+                <div class="box " id="register">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <p>Register</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box registerContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+                </div>
+                <div class="box registerContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+                </div>
+                <div class="box" id="login">
+                    <div class="icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                    <p>Login</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box loginContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+
+                </div>
+                <div class="box loginContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainImage">
+        <img
+            src="https://lh3.googleusercontent.com/wlG7b-Aaqhe5Lha73h8i3bZ40i-bbpmlIub8DpsoF5aAC216D7m-FLRXLXoLFxXjUmRzArIPvctlZBpQB9_tenyGlcdBVh3O_zKVibGn">
+    </div>
+    <div id="mainCourseDetail">
+        <div class="info">
+            <h6>Certified Online Courses</h6>
+            <h6>Upgrade your skills with Intern Theory's online learning platform. Enrol for any certified online
+                courses and get a step ahead of competition. Select from a range of skill based online courses and
+                kickstart your career</h6>
+        </div>
+        <div id="courseContainer">
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer-box">
+            <div class="footer-navigation">
+                <div class="social-handle">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="box places">
+                    <ul>
+                        <li class="heading">BY PLACE</li>
+                        <li>
+                            <a href="#">Internship in Mumbai</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Delhi</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Bangalore</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Pune</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Hyderabad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box profiles">
+                    <ul>
+                        <li class="heading">BY PROFILE</li>
+                        <li>
+                            <a href="#">Marketing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Business Development Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Content Writing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Graphic Designing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">HR Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Engineering Internships</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box types">
+                    <ul>
+                        <li class="heading">BY TYPE</li>
+                        <li>
+                            <a href="#">Full Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Part Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Work From Home Internships</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="top">
+                    <ul>
+                        <li><a href="#">REFUND & CANCELLATION POLICY</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var courseNames = [
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/it.jpg",
+            name: "IT Starter Pack (4 Courses)",
+            note: "Learn the most demanded skills in the IT industry today. Sig ...",
+            price: 32999,
+            offPrice: 15999,
+            emi: "EMI Starting at 915/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/finthumbnail.jpg",
+            name: "Finance Starter Pack (3 Courses)",
+            note: "Learn the most demanded skills in the Finance industry today ...",
+            price: 23999,
+            offPrice: 11999,
+            emi: "EMI Starting at 687/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",
+            name: "Digital Marketing Course",
+            note: "Learn the art of digital marketing. Sign up for this online ...",
+            price: 11999,
+            offPrice: 5999,
+            emi: "EMI Starting at 343/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png",
+            name: "Stock Market Course",
+            note: "Learn how to trade and invest in stock markets. Enrol for th ...",
+            price: 11999,
+            offPrice: 5999,
+            emi: "EMI Starting at 343/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png",
+            name: "Data Analytics With R Programming Course",
+            note: "Learn data science online. Join this online data analytics c ...",
+            price: 11999,
+            offPrice: 5999,
+            emi: "EMI Starting at 343/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png",
+            name: "Web Development Course",
+            note: "Learn the art of web design and web development. Join this o ...",
+            price: 7999,
+            offPrice: 399,
+            emi: "EMI Starting at 229/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png",
+            name: "Tally + GST Course",
+            note: "Sign up for this online tally and gst course and learn how t ...",
+            price: 7999,
+            offPrice: 3999,
+            emi: "EMI Starting at 229/month",
+        },
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png",
+            name: "Android App Development Using Kotlin Course",
+            note: "Learn the art of android app design and web development. Joi ...",
+            price: 7999,
+            offPrice: 3999,
+            emi: "EMI Starting at 229/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png",
+            name: "Advanced Excel Course",
+            note: "Master MS Excel. Take the online ms excel course and learn t ...",
+            price: 5999,
+            offPrice: 2999,
+            emi: "EMI Starting at 172/month",
+        },
+
+        {
+            img: "https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png",
+            name: "R Programming Course",
+            note: "Learn r programming online. Sign up for this online r progra ...",
+            price: 5999,
+            offPrice: 2999,
+            emi: "EMI Starting at 172/month",
+        },
+    ]
+
+    courseNames.map(function (elem) {
+        var courseDiv = document.createElement("div");
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.img);
+        img.setAttribute("class", "imgProperty");
+        img.innerText = elem.img;
+
+        var nameDiv = document.createElement("div")
+        var name = document.createElement("h2");
+        name.innerText = elem.name;
+        name.setAttribute("class", "marginBottom");
+
+        var note = document.createElement("p");
+        note.innerText = elem.note;
+
+        nameDiv.append(name, note);
+        nameDiv.setAttribute("class", "namenoteClass")
+
+        var costDiv = document.createElement("div")
+        var price = document.createElement("s");
+        price.innerText = elem.price;
+
+        var offPrice = document.createElement("h4");
+        offPrice.innerText = elem.offPrice;
+
+
+        costDiv.append(price, offPrice);
+        costDiv.setAttribute("class", "costdiv");
+
+        var emiDiv = document.createElement("div");
+        var emi = document.createElement("p");
+        emi.innerText = elem.emi;
+
+        emiDiv.append(emi);
+        emiDiv.setAttribute("class", "emiClass");
+
+        var costemi = document.createElement("div");
+        costemi.append(costDiv, emiDiv);
+
+        var firstdiv = document.createElement("div");
+        firstdiv.append(nameDiv, costemi);
+        firstdiv.setAttribute("class", "firstblock");
+
+        var second = document.createElement("div");
+        var cart = document.createElement("button");
+        cart.innerText = "ADD TO CART";
+        second.append(cart);
+        cart.setAttribute("class", "buttonContainer");
+        second.setAttribute("class", "cartbtn");
+
+        courseDiv.append(img, firstdiv, second);
+        courseDiv.setAttribute("class", "courseDivGrid");
+
+        var gridDiv = document.createElement("div");
+        gridDiv.append(courseDiv);
+        gridDiv.setAttribute("class", "gridClass");
+        document.querySelector("#courseContainer").append(gridDiv);
+
+        cart.addEventListener("click", function (el) {
+            cartitems(elem);
+        });
+    });
+    var cartArr = JSON.parse(localStorage.getItem("Cartitem")) || [];
+
+    function cartitems(el) {
+        cartArr.push(el);
+        localStorage.setItem("Cartitem", JSON.stringify(cartArr));
+    }
+
+</script>
+<script src="Script/common.js"></script>

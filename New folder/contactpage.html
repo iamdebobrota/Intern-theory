@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/contactpage.css" />
+    <link rel="stylesheet" href="Styles/common.css" />
+    <link rel="stylesheet" href="Styles/homepage.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-data">
+            <div class="header-left">
+                <div class="icon main-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy" />
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-container"><a href="login.html">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-box">
+            <div class="sidebar-top">
+                <div class="icon second-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="sidebar-grid">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <a href="internship.html">Internships</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <a href="internship.html">Jobs</a>
+                </div>
+                <!-- <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-rectangle-list"></i>
+                    </div>
+                    <p>Post Internships</p>
+                </div> -->
+                <div class="box" id="course">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <p>Courses</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box courseContainer1">
+                    <div class="icon">
+                    </div>
+                    <p>Online Courses</p>
+                </div>
+                <div class="box courseContainer2">
+                    <div class="icon">
+                    </div>
+                    <p>Classroom Training</p>
+                </div>
+                <div class="box contact-us">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <a href="contactpage.html">Contact Us</a>
+                </div>
+                <div class="box " id="register">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <p>Register</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box registerContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+                </div>
+                <div class="box registerContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+                </div>
+                <div class="box" id="login">
+                    <div class="icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                    <p>Login</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box loginContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+
+                </div>
+                <div class="box loginContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="container">
+        <h5>Contact</h5>
+        <div id="lbox">
+            Have something to say? Give us a holler through any one of the ways
+            below, and we’ll get back within 24 hours. On a side note, like the rest
+            around us, we have fallen victims to Social Media. Feel free to get in
+            touch on Facebook, LinkedIn or Instagram anytime!
+        </div>
+        <form action="" id="form">
+            <div id="signinbtn">
+                <input type="email" placeholder="Email" class="email" />
+                <input type="phone" placeholder="Mobile no" class="mobile" />
+                <input type="Subject" placeholder="Subject" class="subject" />
+                <input type="Massage" placeholder="Massage" class="massage" />
+                <!-- <input type="submit" placeholder="Submit" id="submit" value="SUBMIT"> -->
+            </div>
+            <div class="button-container"><a href="#">Sign In</a></div>
+        </form>
+
+        <div class="call">
+            <div class="icon5">
+                <i class="fa-brands fa-facebook-square"></i>
+            </div>
+            <div class="icon1">
+                <i class="fa-brands fa-twitter-square"></i>
+            </div>
+            <div class="icon2">
+                <i class="fa-brands fa-instagram-square"></i>
+            </div>
+            <div class="icon3">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="icon4">
+                <i class="fa-brands fa-whatsapp-square"></i>
+            </div>
+        </div>
+        <p class="or">OR</p>
+
+        <p class="create">Call: +91 81047 73673</p>
+    </div>
+
+    <!-- map -->
+
+    <!--The div element for the map -->
+    <div id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942437.4754310771!2d87.76779935969184!3d22.67628328715988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1645605463045!5m2!1sen!2sin"
+            width="540" height="500" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-container">
+        <div class="footer-box">
+            <div class="footer-navigation">
+                <div class="social-handle">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="box places">
+                    <ul>
+                        <li class="heading">BY PLACE</li>
+                        <li>
+                            <a href="#">Internship in Mumbai</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Delhi</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Bangalore</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Pune</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Hyderabad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box profiles">
+                    <ul>
+                        <li class="heading">BY PROFILE</li>
+                        <li>
+                            <a href="#">Marketing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Business Development Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Content Writing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Graphic Designing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">HR Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Engineering Internships</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box types">
+                    <ul>
+                        <li class="heading">BY TYPE</li>
+                        <li>
+                            <a href="#">Full Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Part Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Work From Home Internships</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="top">
+                    <ul>
+                        <li><a href="#">REFUND & CANCELLATION POLICY</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="Script/common.js"></script>
+<!-- 
+<script
+      src="https://goo.gl/maps/SQS4Z6jf72VHPBjo7"
+      async
+    ></script>
+
+    <script>
+        // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+    </script> -->

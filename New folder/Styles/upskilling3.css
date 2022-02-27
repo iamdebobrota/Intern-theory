@@ -1,0 +1,586 @@
+#main {
+  /* border:2px solid red; */
+  height: 540px;
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  background: cover;
+  opacity: 0.6;
+}
+#section {
+  /* border:1px solid red; */
+  height: auto;
+  width: 84%;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 10px;
+}
+#section > div:first-child {
+  /* border:1px solid black; */
+  width: 75%;
+  height: auto;
+}
+#section > div:last-child {
+  /* border:1px solid black; */
+  width: 25%;
+  height: 1190px;
+}
+#part1 > div:first-child {
+  /* border:1px solid green; */
+  width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#part1 > div:first-child > h1 {
+  font-size: 40px;
+  padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  line-height: 80px;
+}
+#part1 > div:first-child > p {
+  font-size: 18px;
+  padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0000008a;
+}
+
+#part1 > div:last-child {
+  /* border:1px solid green; */
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#part2>div:nth-child(1){
+  /* border:1px solid green; */
+  width:100%;
+  height:200px;
+  margin-bottom: 30px;
+  margin-top: -130px;
+  /* background-color: white; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#part2 > div:nth-child(2) {
+  /* border:1px solid green; */
+  width: 100%;
+  height: 320px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#part2 > div:nth-child(3) {
+  display: flex;
+  border: 1px solid green;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#part2 > div:nth-child(4) {
+  /* border:1px solid green; */
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#box > .box1 {
+  display: flex;
+  /* border: 1px solid blue; */
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+#box > .box8 {
+  display: flex;
+  /* border: 1px solid blue; */
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  gap: 10px;
+  padding-top: 30px;
+}
+#box > #box2 {
+  /* border:1px solid black; */
+  width: 100%;
+  height: 220px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 105px);
+}
+#box > #box2 > div {
+  /* border:2px solid red; */
+}
+#box > #box3 {
+  /* border:1px solid black; */
+  width: 100%;
+  height: 110px;
+}
+#box > #box4 {
+  display: flex;
+  /* border: 1px solid rgb(0, 255, 0); */
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  gap: 10px;
+}
+
+#box > .box5 {
+  display: flex;
+  /* border:1px solid rgb(199, 56, 37); */
+  width: 100%;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+#box > .box1 > div:first-child {
+  height: 40px;
+  width: 5px;
+  background-color: rgb(214, 183, 43);
+  margin-left: 53px;
+  margin-top: 5px;
+}
+#box > .box1 > div:last-child {
+  height: 50px;
+  width: 650px;
+  /* border:1px solid red; */
+}
+#box > .box1 > div:last-child > p {
+  color: #3c4858;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 11px;
+  padding: 0 0 0 12px;
+}
+#box > .box8 > div:first-child {
+  height: 40px;
+  width: 5px;
+  background-color: rgb(214, 183, 43);
+  margin-left: 53px;
+  margin-top: 5px;
+}
+#box > .box8 > div:last-child {
+  height: 50px;
+  width: 650px;
+  /* border:1px solid red; */
+}
+#box > .box8 > div:last-child > p {
+  color: #3c4858;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 11px;
+  padding: 0 0 0 12px;
+}
+#box > #box2 > .div {
+  display: flex;
+  width: 420px;
+  height: 105px;
+  gap: 10px;
+  margin-left: 90px;
+}
+#box > #box2 > .div1 {
+  display: flex;
+  width: 420px;
+  height: 105px;
+  gap: 10px;
+  margin-left: 20px;
+}
+#box > #box2 > .div > div:first-child {
+  height: 105px;
+  width: 105px;
+  /* border:1px solid black; */
+}
+#box > #box2 > .div1 > div:first-child {
+  height: 105px;
+  width: 105px;
+  /* border:1px solid black; */
+}
+#box > #box2 > .div > div:first-child > img {
+  width: 100%;
+  opacity: 0.9;
+}
+#box > #box2 > .div1 > div:first-child > img {
+  width: 100%;
+  opacity: 0.9;
+}
+#box > #box2 > .div > div:last-child {
+  height: 105px;
+  width: 300px;
+  /* border:1px solid black; */
+}
+#box > #box2 > .div1 > div:last-child {
+  height: 105px;
+  width: 300px;
+  /* border:1px solid black; */
+}
+#box > #box2 > .div > div:last-child > p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #3c4858;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+#box > #box2 > .div1 > div:last-child > p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #3c4858;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+#box > #box3 {
+  /* border:1px solid black; */
+  width: 100%;
+  height: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 105px);
+}
+#box > #box3 > .div {
+  display: flex;
+  width: 420px;
+  height: 105px;
+  gap: 10px;
+  margin-left: 90px;
+}
+#box > #box3 > .div1 {
+  display: flex;
+  width: 420px;
+  height: 105px;
+  gap: 10px;
+  margin-left: 20px;
+}
+#box > #box3 > .div > div:first-child > img {
+  width: 100%;
+  opacity: 0.9;
+}
+#box > #box3 > .div1 > div:first-child > img {
+  width: 100%;
+  opacity: 0.9;
+}
+#box > #box3 > .div > div:last-child > p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #3c4858;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+#box > #box3 > .div1 > div:last-child > p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #3c4858;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+#box > #box4 > div:first-child {
+  /* border:1px solid black; */
+  height: 50px;
+  width: 700px;
+  margin-left: 70px;
+}
+#box > #box4 > div:last-child {
+  /* border:1px solid black; */
+  height: 50px;
+  width: 50px;
+  margin-left: 270px;
+}
+#box > #box4 > div > p {
+  color: #087cdd;
+  font-size: 18px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+#box > .box5 > div:nth-child(1) {
+  /* border:1px solid black; */
+  height: 70px;
+  width: 70px;
+  margin-left: 70px;
+}
+#box > .box5 > div:nth-child(2) {
+  /* border:1px solid black; */
+  height: 70px;
+  width: 500px;
+  margin-left: 20px;
+}
+#box > .box5 > div:nth-child(3) {
+  /* border:1px solid black; */
+  height: 70px;
+  width: 70px;
+  margin-left: 380px;
+}
+#box > .box5 > div > p:first-child {
+  color: #087cdd;
+  font-size: 18px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+#box > .box5 > div > p:last-child {
+  color: #31333596;
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+}
+#box > .box5 > #one > p {
+  color: #000000de;
+  font-size: 36px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 15px 0 0 15px;
+}
+#box > #box6 {
+  border: 1px solid rgba(240, 15, 15, 0.459);
+  height: 42px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 70px;
+  border-radius: 3px;
+}
+#box > #box6 > p {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+#box > #box4 > div > i {
+  margin-left: 18px;
+  margin-top: 15px;
+  color: #087cdd;
+}
+#box > .box5 > div:nth-child(3) > i {
+  margin-left: 25px;
+  margin-top: 25px;
+  color: #087cdd;
+}
+.line {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  border-top: 1px dashed #31333596;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.line1 {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  border-top: 1px solid #31333596;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.line2 {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  border-top: 2px solid #31333596;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.line3 {
+  width: 98%;
+  margin: auto;
+  border-top: 1px dashed #31333596;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#redline {
+  height: 50px;
+  width: 100%;
+  background-color: red;
+}
+#redline > p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 13px;
+}
+#part2 > #last4 > .Similar1 {
+  color: #313335b2;
+  font-size: 20px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+#part2 > #last4 > .Similar {
+  color: #313335b2;
+  font-size: 20px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#part2 > #last4 > hr {
+  width: 90%;
+  margin: auto;
+  border:1px solid grey;
+}
+#part2 > #last4 > .Similardiv {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  /* border:1px solid black; */
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+#part2 > #last4 > .Similardiv > .know1 {
+  /* border:1px solid red; */
+  height: 50px;
+  width: 200px;
+}
+#part2 > #last4 > .Similardiv > .know2 {
+  /* border:1px solid red; */
+  height: 50px;
+  width: 70px;
+  margin-left: 15px;
+}
+#part2 > #last4 > .Similardiv > .know3 {
+  /* border:1px solid red; */
+  height: 50px;
+  width: 100px;
+}
+#part2 > #last4 > .Similardiv > .know1 > p {
+  color: #0775cf;
+  font-size: 19px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-top: 14px;
+  margin-left: 20px;
+}
+#part2 > #last4 > .Similardiv > .know2 > p {
+  color: #313335da;
+  font-size: 17px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+}
+#part2 > #last4 > .Similardiv > .know3 > p {
+  color: #313335e0;
+  font-size: 28px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+  margin-top: 11px;
+  margin-bottom: 10px;
+}
+#part2 > #last3 > div:first-child {
+  height: 120px;
+  width: 70%;
+  border: 1px solid black;
+  background-color: rgba(255, 192, 203, 0.178);
+}
+#part2 > #last3 > div:first-child:hover {
+  background-color: rgba(155, 198, 209, 0.13);
+}
+#part2 > #last3 > div:last-child {
+  height: 120px;
+  width: 30%;
+  border: 1px solid black;
+}
+#part2 > #last3 > div:first-child > h6 {
+  color: #3c4858e0;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+#part2 > #last3 > div:first-child > p {
+  color: #0000008a;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 6px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+#part2 > #last2 > h6 {
+  margin-left: 20px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #3c4858;
+  margin-top: 30px;
+  padding: 20px;
+}
+#part2 > #last2 > hr {
+  width: 90%;
+  margin: auto;
+  margin-top: 35px;
+  border: 1px dashed rgba(128, 128, 128, 0.411);
+}
+#part2 > #last2 > #price {
+  width: 100%;
+  height: 60px;
+  /* border:1px solid red; */
+  margin-top: 10px;
+  display: flex;
+}
+#part2 > #last2 > #price > div:first-child {
+  width: 200px;
+  height: 50px;
+  /* border:1px solid red; */
+}
+#part2 > #last2 > #price > div:last-child {
+  width: 100px;
+  height: 50px;
+  /* border:1px solid red; */
+}
+#part2 > #last2 > #price > div:first-child > h1 {
+  color: red;
+  font-size: 50px;
+  margin-left: 20px;
+ letter-spacing: 2px;
+}
+#part2 > #last2 > #price > div:last-child > p {
+  color: #3c4858;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 24px;
+  text-decoration: line-through;
+}
+#part2 > #last2 > #cart {
+  height: 52px;
+  width: 92%;
+  margin: auto;
+  background-color: red;
+  border-radius: 7px;
+}
+#part2 > #last2 > #cart > p {
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  padding-top: 15px;
+}
+#part2 > #last2 > #or {
+  text-align: center;
+  font-size: 23px;
+  color: #3c4858;
+}
+#part2 > #last2 > #enroll {
+  height: 52px;
+  width: 92%;
+  margin: auto;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 0, 0, 0.692);
+}
+#part2 > #last2 > #enroll:hover {
+  background-color: rgba(216, 180, 180, 0.404);
+}
+#part2 > #last2 > #enroll > p {
+  color: red;
+  text-align: center;
+  font-size: 23px;
+  padding-top: 15px;
+}
+#part2>#last1>iframe{
+  width:94%;
+  height:200px;
+  margin-left:13px;
+}
+
