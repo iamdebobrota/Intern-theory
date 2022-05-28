@@ -1,0 +1,100 @@
+.cartContainer {
+  width: 100%;
+  margin-top: 61px;
+}
+.cartBox {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+}
+.cartLeft {
+  width: 60%;
+}
+.cartRight {
+  width: 40%;
+}
+
+.innerBox {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  margin: 20px 0;
+}
+.innerBox > .innerLeft {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.innerBox > .innerLeft > .imgBox {
+  width: 100%;
+}
+.innerBox > .innerLeft > .imgBox > img {
+  width: 100%;
+}
+
+.innerBox > .innerRight {
+  width: 60%;
+  line-height: 20px;
+}
+.innerBox > .innerRight > .name {
+  font-weight: bold;
+}
+
+.innerBox > .innerRight > .priceBox {
+  display: flex;
+}
+.innerBox > .innerRight > .priceBox > p {
+  font-weight: bold;
+  margin-right: 20px;
+}
+.innerBox > .innerRight > .priceBox > del {
+  color: rgba(0, 0, 0, 0.233);
+}
+
+.cartRight > div {
+  width: 100%;
+  margin: 20px;
+  line-height: 30px;
+  padding: 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.cartRight > div > div {
+  margin-bottom: 25px;
+}
+.cartRight > div > .itemBox {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.cartRight > div > .priceBox {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.cartRight > div > .mrpBox {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.cartRight > div > button {
+  text-decoration: none;
+  background-color: #df1e2e;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.5s;
+  outline: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.cartRight > div > button:hover {
+  background-color: #5a3939;
+}

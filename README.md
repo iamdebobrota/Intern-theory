@@ -1,5 +1,2 @@
-# Intern-theory
-clone intern theory
-https://github.com/iamdebobrota/Intern-theory tap here to preview of my project
-
-Deploy Link: https://elated-shaw-64a95c.netlify.app
+# Intern-Theroy
+ Unit 2 Project

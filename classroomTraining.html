@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/common.css">
+    <style>
+        * {
+            background-color: rgb(252, 245, 245);
+            box-sizing: border-box;
+        }
+
+        .imgClass {
+            width: 100%;
+            height: 200px;
+            margin-top: 64px;
+        }
+
+        #courseDetail {
+            margin-top: 5%;
+            margin-bottom: 50%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #container>p {
+            font-weight: lighter;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 200px;
+            gap: 15px;
+        }
+
+        .maindiv {
+            box-shadow: rgba(0, 0, 0, 0.16) 1px 2px 4px;
+            height: 400px;
+            width: 250px;
+        }
+
+        .coursetitlediv {
+            border-bottom: 1px dashed;
+            box-sizing: border-box;
+
+        }
+
+        .imgclass {
+            height: 140px;
+            width: 250px;
+        }
+
+        .onlyprice,
+        .emidiv,
+        .cartbtn {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 20px;
+        }
+
+        .emidiv>p {
+            width: max-content;
+            color: orange;
+        }
+
+        .marginclass {
+            margin: 5%
+        }
+
+        .buttonContainer {
+            text-decoration: none;
+            border: none;
+            background-color: #df1e2e;
+            color: #fff;
+            padding: 10px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.5s;
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+        }
+
+        .buttonContainer:hover {
+            background-color: #5a3939;
+        }
+
+        .cartbtn {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header-container">
+        <div class="header-data">
+            <div class="header-left">
+                <div class="icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy" />
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-container"><a href="login.html">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-box">
+            <div class="sidebar-top">
+                <div class="icon second-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="sidebar-grid">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <a href="internship.html">Internships</a>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <a href="internship.html">Jobs</a>
+                </div>
+                <!-- <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                </div>
+                <p>Post Internships</p>
+            </div> -->
+                <div class="box" id="course">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <p>Courses</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box courseContainer1">
+                    <div class="icon">
+                    </div>
+                    <p>Online Courses</p>
+                </div>
+                <div class="box courseContainer2">
+                    <div class="icon">
+                    </div>
+                    <p>Classroom Training</p>
+                </div>
+                <div class="box contact-us">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <a href="contactpage.html">Contact Us</a>
+                </div>
+                <div class="box " id="register">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <p>Register</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box registerContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+                </div>
+                <div class="box registerContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+                </div>
+                <div class="box" id="login">
+                    <div class="icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                    <p>Login</p>
+                    <div class="icon open activeBtn" id="open">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon close" id="close">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="box loginContainer1">
+                    <div class="icon">
+                    </div>
+                    <a href="signup-company.html">Company</a>
+
+                </div>
+                <div class="box loginContainer2">
+                    <div class="icon">
+                    </div>
+                    <a href="signupStudent.html">Student</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="imgClass">
+            <img src="https://lh3.googleusercontent.com/wlG7b-Aaqhe5Lha73h8i3bZ40i-bbpmlIub8DpsoF5aAC216D7m-FLRXLXoLFxXjUmRzArIPvctlZBpQB9_tenyGlcdBVh3O_zKVibGn"
+                width="100%">
+        </div>
+        <div id="courseDetail">
+            <div>
+                <h3>Certified Offline Courses</h3>
+                <p>Intern Theory launches certified classroom training for select courses in Mumbai. If you are from
+                    another city and wish to join our courses, please whatsapp us on 9892041244</p>
+            </div>
+            <div id="container"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+    var courseInfo = [
+        {
+            img: "https://assets.interntheory.com/courses/banner/1573118304.png",
+            pack: "Offline Digital Marketing Course",
+            pTag: "Learn the art of digital marketing. Sign up for this offline ...",
+            price: "₹ 19999",
+            offPrice: "₹ 9999",
+            emi: "EMI Starting at ₹ 572/month",
+            // knowMore:"KNOW MORE",
+            // cart:"ADD TO CART",
+        },
+        {
+            img: "https://assets.interntheory.com/courses/banner/1573120159.png",
+            pack: "Offline Stock Market Course",
+            pTag: "Learn how to trade and invest in stock markets. Enroll for t ...",
+            price: "₹ 19999",
+            offPrice: "₹ 9999",
+            emi: "EMI Starting at ₹ 572/month",
+        },
+        {
+            img: "https://assets.interntheory.com/courses/banner/1573120767.png",
+            pack: "Offline Tally + GST Course",
+            pTag: "Sign up for this offline tally and GST course and learn how ...",
+            price: "₹ 15999",
+            offPrice: "₹ 7999",
+            emi: "EMI Starting at ₹ 458/month",
+        },
+        {
+            img: "https://assets.interntheory.com/courses/banner/1573120508.png",
+            pack: "Offline Advanced Excel Course",
+            pTag: "Master MS Excel. Take the offline ms excel course and learn ...",
+            price: "₹ 19999",
+            offPrice: "₹ 5999",
+            emi: "EMI Starting at ₹ 343/month",
+        },
+    ]
+
+    courseInfo.map(function (elem) {
+        var mainDiv = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.img);
+        img.setAttribute("class", "imgclass");
+
+
+        var firstDiv = document.createElement("div")
+
+        var courseTitleDiv = document.createElement("div")
+        var packDiv = document.createElement("div")
+        var pack = document.createElement("h3");
+        pack.innerText = elem.pack;
+        packDiv.append(pack);
+
+
+        var pTag = document.createElement("p");
+        var pTagDiv = document.createElement("div")
+        pTag.innerText = elem.pTag;
+        pTagDiv.append(pTag);
+        courseTitleDiv.append(packDiv, pTagDiv);
+        courseTitleDiv.setAttribute("class", "coursetitlediv")
+
+        var priceEmiDiv = document.createElement("div")
+
+        var price = document.createElement("s");
+        price.innerText = elem.price;
+
+        var offPrice = document.createElement("h4");
+        offPrice.innerText = elem.offPrice;
+
+        var onlyPrice = document.createElement("div");
+        onlyPrice.append(price, offPrice);
+        onlyPrice.setAttribute("class", "onlyprice");
+
+        var emiDiv = document.createElement("div")
+        var emi = document.createElement("p");
+        emi.innerText = elem.emi;
+        emiDiv.append(emi)
+        emiDiv.setAttribute("class", "emidiv");
+
+        priceEmiDiv.append(onlyPrice, emiDiv);
+        priceEmiDiv.setAttribute("class", "priceEmidiv");
+
+
+        firstDiv.append(courseTitleDiv, priceEmiDiv);
+        firstDiv.setAttribute("class", "marginclass");
+
+        var cartBtn = document.createElement("div");
+        var cartButton = document.createElement("button")
+        cartButton.innerText = "ADD TO CART";
+        cartBtn.append(cartButton);
+        cartButton.setAttribute("class", "buttonContainer");
+        cartBtn.setAttribute("class", "cartbtn");
+
+        mainDiv.append(img, firstDiv, cartBtn);
+
+        var mainInnerDiv = document.createElement("div");
+        mainInnerDiv.append(mainDiv);
+        mainDiv.setAttribute("class", "maindiv");
+
+        document.querySelector("#container").append(mainInnerDiv);
+    });
+</script>
+<script src="Script/common.js"></script>

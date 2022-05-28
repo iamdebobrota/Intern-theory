@@ -1,0 +1,104 @@
+#imgDiv {
+  width: 20%;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+#outer {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+#imgDiv > img {
+  width: 100%;
+}
+#container {
+  width: 68%;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+#container > div.mainDiv {
+  width: 90%;
+  margin-bottom: 20px;
+  border-bottom: 3px dashed #00000054;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(59, 56, 56, 0.87);
+}
+.innerDiv2 {
+  line-height: 20px;
+  width: 50%;
+}
+.innerDiv2 > h6 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 14px;
+}
+.innerDiv2 > p {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.innerDiv2 > .para5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.heading {
+  margin: 30px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.heading > h5 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 20px;
+  font-weight: 100;
+}
+.mainDiv {
+  display: flex;
+}
+.innerDiv {
+  width: 25%;
+}
+.innerDiv > .imgBox {
+  width: 100px;
+}
+.innerDiv > .imgBox > img {
+  width: 100%;
+}
+.innerDiv3 {
+  width: 25%;
+  height: 100%;
+  text-align: right;
+  font-size: 15px;
+  line-height: 57px;
+}
+.innerDiv3 > p {
+  color: black;
+  font-weight: lighter;
+}
+.innerDiv3 > a {
+  color: rgb(117, 117, 228);
+  font-weight: bold;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.innerDiv3 > a:hover {
+  background-color: rgba(117, 117, 228, 0.116);
+  border-radius: 4px;
+}
+.symDiv {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.symDiv:hover {
+  background-color: #00000021;
+  border-radius: 50%;
+  cursor: pointer;
+}
