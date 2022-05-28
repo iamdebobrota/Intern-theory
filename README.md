@@ -3,7 +3,7 @@
 <img src='https://pbs.twimg.com/media/FT1hQ1BXsAI216y?format=jpg&name=large' alt='aa' />
 
 
-<img src='https://pbs.twimg.com/media/FT1hQ1BXsAI216y?format=jpg&name=large](https://pbs.twimg.com/media/FT1hMFLWQAEdHS1?format=jpg&name=large' alt='aa' />
+<img src='https://pbs.twimg.com/media/FT1hMFLWQAEdHS1?format=jpg&name=large' alt='aa' />
 
 
 
